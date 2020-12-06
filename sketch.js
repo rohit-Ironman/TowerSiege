@@ -11,6 +11,7 @@ var box11, box12, box13, box14, box15;
 var box16;
 var polygon; 
 var rope1;
+var score = 0;
 
 function setup() {
   createCanvas(800,800);
@@ -57,6 +58,10 @@ function draw() {
   background("blue");  
   Engine.update(engine);
 
+  textSize(25); 
+  fill("black"); 
+  text("Score: " + score, 400, 50)
+
   ground.display();
   box1.display();
   box2.display();
@@ -76,6 +81,8 @@ function draw() {
   box16.display();
   polygon.display();
   rope1.display();
+
+
 }
 
 

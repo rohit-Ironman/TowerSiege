@@ -31,8 +31,10 @@ class Box{
            var pos = this.body.position;
            this.Visibility = this.Visibility - 5;
            tint(255,this.Visibility);
+           score++
            rect();
            pop();
          }
+
       }
   };
